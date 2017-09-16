@@ -9,13 +9,19 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'public'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/public'
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             minimize: true,
             compress: {
                 warnings: false
+            }
+        }),
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
             }
         })
     ]
