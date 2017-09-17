@@ -9,7 +9,8 @@
     "start": "node ./src/app.js"
   },
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "webpack": "^3.6.0",
