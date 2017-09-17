@@ -1,5 +1,5 @@
 const Server = require('./server');
-const port = (process.env.PORT || 8080);
+const port = (process.env.PORT || 3000);
 const app = Server.app();
 
 if (process.env.NODE_ENV !== 'production') {
@@ -16,6 +16,5 @@ if (process.env.NODE_ENV !== 'production') {
     }));
 }
 
-app.listen(3000, function () {
-    console.log('App is the livein your laptop!\n');
-});
+app.listen(port);
+console.log(`Listening at http://localhost:${port}`);
