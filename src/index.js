@@ -1,11 +1,14 @@
-import _ from 'lodash';
+//import _ from 'lodash';
 
-function component() {
-    var element = document.createElement('div');
+(function() {
+    let a, b;
 
-    element.innerHTML = _.join(['Hello', 'Lolkek'], ' ');
+    function add(a, b) {
+        return a + b;
+    }
 
-    return element;
-}
+    alert(add(7222,749));
+})();
+
 
 document.body.appendChild(component());

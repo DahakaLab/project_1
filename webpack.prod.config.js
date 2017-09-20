@@ -24,5 +24,16 @@ module.exports = {
                 'NODE_ENV': JSON.stringify('production')
             }
         })
-    ]
-}
+    ],
+    module: {
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: "babel-loader",
+                options: {
+                    presets: "es2015"
+                }
+            }
+        ]
+    }
+};
