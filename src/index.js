@@ -1,13 +1,11 @@
 //import _ from 'lodash';
 
 (function() {
-    let a, b;
+    let a;
 
-    function add(a, b) {
-        return a + b;
-    }
+    a = "Пошли спать, моя любмая! Tämä on kissa! :3"
 
-    alert(add(7222,749));
+    alert(a);
 })();
 
 
