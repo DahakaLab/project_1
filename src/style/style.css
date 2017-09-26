@@ -5,3 +5,7 @@
 .color_font_red{
     color: red;
 }
+
+body {
+    background-image: url('./../image/backgroundTextur.png');
+}

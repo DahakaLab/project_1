@@ -1,18 +1,10 @@
-import _ from 'lodash';
+//import _ from 'lodash';
 import './style/style.css';
+import { whoBeautiful } from './functions/massageOutput.js';
 
 (function() {
     var admin;
     var name;
-
-    function component () {
-        var massage = document.createElement('div');
-
-        massage.innerHTML = 'Кто самая красивая девушка на свете?';
-        massage.classList.add('color_font_green');
-
-        return massage;
-    }
 
     name = '';
 
@@ -25,6 +17,6 @@ import './style/style.css';
     admin.classList.add('color_font_red');
 
 
-    document.body.appendChild(component());
+    document.body.appendChild(whoBeautiful());
     document.body.appendChild(admin);
 })();
