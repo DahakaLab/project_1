@@ -1,4 +1,4 @@
-export function whoBeautiful (x) {
+export function showWhoBeautiful (x) {
     var massage = document.createElement('div');
 
     massage.innerHTML = x;
