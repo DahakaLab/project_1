@@ -33,9 +33,6 @@ import { showWhoBeautiful } from './functions/massageOutput.js';
     nameOut.textContent = name;
     nameOut.classList.add('color_font_red');
 
-    var test = document.getElementById('nameOut');
-    alert(test == nameOut);
-
     document.head.appendChild(nameTitle);
     document.body.appendChild(caption);
     document.body.appendChild(showWhoBeautiful(text));
