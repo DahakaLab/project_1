@@ -10,7 +10,7 @@ import { showWhoBeautiful } from './functions/massageOutput.js';
     var name = '';
     var nameTitleText = 'Simple app';
     var text;
-    var elems = document.body.childNodes;
+    var elems = document.body.children;
 
     while (name === '') {
         name = prompt('Enter you name:', '');
@@ -30,16 +30,21 @@ import { showWhoBeautiful } from './functions/massageOutput.js';
     nameTitle.innerHTML = nameTitleText;
 
     nameOut = document.createElement('div');
-    nameOut.innerHTML = name;
+    nameOut.textContent = name;
     nameOut.classList.add('color_font_red');
+
+    var test = document.getElementById('nameOut');
+    alert(test == nameOut);
 
     document.head.appendChild(nameTitle);
     document.body.appendChild(caption);
     document.body.appendChild(showWhoBeautiful(text));
     document.body.appendChild(nameOut);
-    console.log(name);
+    console.dir(name);
+
+    console.log('end');
 
     for (var i = 0; i < elems.length; i++) {
-        console.log(elems[i]);
+        console.dir(elems[i]);
     }
 })();
