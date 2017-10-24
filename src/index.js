@@ -1,16 +1,16 @@
 //import _ from 'lodash';
 import './style/style.css';
-import { showWhoBeautiful } from './functions/massageOutput.js';
+import { showWhoBeautiful } from './data/massageOutput.js';
+import { formInputData } from './data/form.js';
 
 (function() {
     var nameOut;
     var nameTitle;
     var caption;
     var captionText = 'Good night!';
-    var name = '';
+    var name = 'lol';
     var nameTitleText = 'Simple app';
     var text;
-    var elems = document.body.children;
 
     while (name === '') {
         name = prompt('Enter you name:', '');
@@ -34,14 +34,10 @@ import { showWhoBeautiful } from './functions/massageOutput.js';
     nameOut.classList.add('color_font_red');
 
     document.head.appendChild(nameTitle);
+    document.body.appendChild(formInputData());
     document.body.appendChild(caption);
     document.body.appendChild(showWhoBeautiful(text));
     document.body.appendChild(nameOut);
+    
     console.dir(name);
-
-    console.log('end');
-
-    for (var i = 0; i < elems.length; i++) {
-        console.dir(elems[i]);
-    }
 })();
