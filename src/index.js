@@ -7,27 +7,21 @@ import { formInputData } from './data/form.js';
     var nameOut;
     var nameTitle;
     var caption;
-    var captionText = 'Good night!';
-    var name = 'lol';
+    var captionText = 'Hello!';
+    var name;
     var nameTitleText = 'Simple app';
     var text;
+    var button;
 
-    while (name === '') {
-        name = prompt('Enter you name:', '');
-    }
-
-    if (name === null) {
-        text = 'Sorry, you did not enter a name...';
-    }
-    else {
-        text = 'Who most beatiful people?';
-    }
+    text = 'Please enter you name and surname...';
 
     caption = document.createElement('h1');
     caption.innerHTML = captionText;
 
     nameTitle = document.createElement('title');
     nameTitle.innerHTML = nameTitleText;
+
+    name = '... my dear friend.';
 
     nameOut = document.createElement('div');
     nameOut.textContent = name;
@@ -38,6 +32,31 @@ import { formInputData } from './data/form.js';
     document.body.appendChild(caption);
     document.body.appendChild(showWhoBeautiful(text));
     document.body.appendChild(nameOut);
-    
-    console.dir(name);
+
+    button = document.getElementById('button');
+
+    button.onclick = function () {
+        var firstName = document.getElementById('firstNameText');
+        var surname = document.getElementById('secondTextName');
+        var massageText = document.getElementById('massage');
+
+        console.log(firstName.value);
+        console.log(surname.value);
+
+        text = 'lolkek';
+        if (firstName.value === '' && surname.value === ''){
+            text = 'Please enter you name and surname...';
+            console.log('true');
+        }
+        else {
+            text = 'Who most beatiful people?';
+            console.log('false');
+        }
+
+        massageText.innerHTML = text;
+
+        nameOut.textContent = firstName.value + ' ' + surname.value;
+
+        showWhoBeautiful(text);
+    };
 })();
