@@ -36,16 +36,18 @@ import { formInputData } from './data/form.js';
     button = document.getElementById('button');
 
     button.onclick = function () {
-        var firstName = document.getElementById('firstNameText');
-        var surname = document.getElementById('secondTextName');
+        var firstName = document.getElementById('firstNameText').value;
+        var surname = document.getElementById('secondTextName').value;
         var massageText = document.getElementById('massage');
 
-        console.log(firstName.value);
-        console.log(surname.value);
+        console.log(firstName);
+        console.log(surname);
 
         text = 'lolkek';
-        if (firstName.value === '' && surname.value === ''){
+        if (firstName === '' && surname === ''){
             text = 'Please enter you name and surname...';
+            firstName = 'you still did not enter anything';
+            surname = 'my dear friend.';
             console.log('true');
         }
         else {
@@ -55,7 +57,7 @@ import { formInputData } from './data/form.js';
 
         massageText.innerHTML = text;
 
-        nameOut.textContent = firstName.value + ' ' + surname.value;
+        nameOut.textContent = firstName + ' ' + surname;
 
         showWhoBeautiful(text);
     };
