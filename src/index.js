@@ -2,16 +2,12 @@
 import './style/style.css';
 import { showWhoBeautiful } from './data/massageOutput.js';
 import { formInputData } from './data/form.js';
+import { eventOnClickEnter } from './data/eventOnClick.js';
 
 (function() {
-    var nameOut;
-    var nameTitle;
-    var caption;
+    var nameOut, nameTitle, caption, name, text, button;
     var captionText = 'Hello!';
-    var name;
     var nameTitleText = 'Simple app';
-    var text;
-    var button;
 
     text = 'Please enter you name and surname...';
 
@@ -35,30 +31,6 @@ import { formInputData } from './data/form.js';
 
     button = document.getElementById('button');
 
-    button.onclick = function () {
-        var firstName = document.getElementById('firstNameText').value;
-        var surname = document.getElementById('secondTextName').value;
-        var massageText = document.getElementById('massage');
 
-        console.log(firstName);
-        console.log(surname);
-
-        text = 'lolkek';
-        if (firstName === '' && surname === ''){
-            text = 'Please enter you name and surname...';
-            firstName = 'you still did not enter anything';
-            surname = 'my dear friend.';
-            console.log('true');
-        }
-        else {
-            text = 'Who most beatiful people?';
-            console.log('false');
-        }
-
-        massageText.innerHTML = text;
-
-        nameOut.textContent = firstName + ' ' + surname;
-
-        showWhoBeautiful(text);
-    };
+    eventOnClickEnter(text, nameOut);
 })();
