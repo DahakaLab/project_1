@@ -18,7 +18,7 @@ export function eventOnClickEnter (text, nameOut) {
             console.log('true');
         } else {
             text = 'Who most beatiful people?';
-            
+
             console.log('false');
         }
 

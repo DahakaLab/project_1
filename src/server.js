@@ -9,6 +9,7 @@ module.exports = {
 
         app.use('/public', publicPath);
         app.get('/', function(_, res) {res.sendfile(indexPath)});
+        app.get('/lolkek', function (req, res) {res.send('Hello World!');});
 
         return app;
     }
