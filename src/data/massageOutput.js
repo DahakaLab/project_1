@@ -7,7 +7,7 @@ export function showWhoBeautiful () {
     var button = document.getElementById('button');
 
     var text = 'Пожалуйста введи имя и фамилию...';
-    var name = '... мой дорогуй друг.';
+    var name = '... мой дорогой друг.';
 
     massage.id = 'massage';
 

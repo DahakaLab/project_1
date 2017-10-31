@@ -13,7 +13,7 @@ export function eventOnClickEnter (text, nameOut) {
         if (firstName === '' && surname === '') {
             text = 'Пожалуйста введи имя и фамилию...';
             firstName = '... ты по прежнему ничего не ввел,';
-            surname = 'мой дорогуй друг.';
+            surname = 'мой дорогой друг.';
 
             console.log('true');
         } else {
