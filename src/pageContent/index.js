@@ -8,8 +8,6 @@ import { titleNode } from './../data/nodes/titleNode.js';
     var caption;
     var captionText = 'Главная страница чайного сервиса!';
 
-
-
     caption = document.createElement('h1');
     caption.innerHTML = captionText;
 
