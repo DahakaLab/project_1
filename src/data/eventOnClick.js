@@ -26,8 +26,6 @@ export function eventOnClickEnter (text, nameOut) {
 
         nameOut.textContent = firstName + ' ' + surname;
 
-        showWhoBeautiful(text);
-
         console.log('click');
     };
 }

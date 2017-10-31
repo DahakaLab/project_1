@@ -3,7 +3,11 @@ const webpack = require('webpack');
 
 module.exports = {
     devtool: 'eval',
-    entry: './src/index.js',
+    entry: {
+        index: './src/pageContent/index.js',
+        lolkek: './src/pageContent/lolkek.js',
+        viewText: './src/pageContent/viewText.js'
+    },
     devServer: {
         contentBase: './public',
         hot: true
@@ -13,7 +17,7 @@ module.exports = {
     ],
     output: {
         path: path.join(__dirname, 'public'),
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         publicPath: '/public'
     },
     module: {

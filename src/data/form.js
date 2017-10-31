@@ -21,5 +21,5 @@ export function formInputData () {
     formTag.appendChild(fieldsetTag);
     formTag.appendChild(paragraphInput);
 
-    return formTag;
+    document.body.appendChild(formTag);
 }
