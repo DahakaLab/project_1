@@ -12,7 +12,7 @@ export function showWhoBeautiful () {
     massage.id = 'massage';
 
     massage.innerHTML = text;
-    massage.classList.add('color_font_green');
+    massage.classList = 'color_font_green';
 
     nameOut.textContent = name;
     nameOut.classList.add('color_font_red');

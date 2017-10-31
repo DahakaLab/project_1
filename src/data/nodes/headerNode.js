@@ -1,8 +1,23 @@
+import './../../style/style.css';
+
 export function headerNode () {
-    var headerText;
+    var header, logoPNG, headerCaption, headerParagraph;
 
-    headerText = document.createElement('header');
-    headerText.innerHTML = 'Чайный сервис';
+    logoPNG = document.createElement('img');
+    logoPNG.src = 'http://chaisotsvetie.ru/filemanager/listok.png';
+    logoPNG.alt = 'Logo';
+    logoPNG.id = 'LogoPNG';
+    logoPNG.classList = 'logo_header';
 
-    document.body.appendChild(headerText);
+    headerCaption = document.createElement('h1');
+    headerCaption.innerHTML = '<img src="http://s1.iconbird.com/ico/2013/9/450/w256h2561380453904Leaf256x25632.png" alt="Logo" id="LogoPNG" class="logo_header">Чай';
+
+    headerParagraph = document.createElement('p');
+    headerParagraph.innerHTML = 'Чайный сервис';
+
+    header = document.createElement('header');
+    header.appendChild(headerCaption);
+    header.appendChild(headerParagraph);
+
+    document.body.appendChild(header);
 }

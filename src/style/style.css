@@ -6,6 +6,18 @@
     color: red;
 }
 
+.logo_header{
+    height: 30px;
+    width: 30px;
+}
+
+header {
+    background-color: #a8ff80;
+    color: #094d00;
+    height: 130px;
+    padding: 10px 50px;
+}
+
 body {
     background-image: url('https://sun9-2.userapi.com/c639830/v639830454/4c95c/GE9BS9sBBNY.jpg');
 }
