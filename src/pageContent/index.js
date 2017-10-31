@@ -6,7 +6,7 @@ import { titleNode } from './../data/nodes/titleNode.js';
 
 (function() {
     var caption;
-    var captionText = 'Main page!';
+    var captionText = 'Главная страница чайного сервиса!';
 
     caption = document.createElement('h1');
     caption.innerHTML = captionText;

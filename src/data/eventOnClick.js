@@ -9,15 +9,15 @@ export function eventOnClickEnter (text, nameOut) {
         console.log(firstName);
         console.log(surname);
 
-        text = 'lolkek';
+
         if (firstName === '' && surname === '') {
-            text = 'Please enter you name and surname...';
-            firstName = '... you still did not enter anything';
-            surname = 'my dear friend.';
+            text = 'Пожалуйста введи имя и фамилию...';
+            firstName = '... ты по прежнему ничего не ввел,';
+            surname = 'мой дорогуй друг.';
 
             console.log('true');
         } else {
-            text = 'Who most beatiful people?';
+            text = 'Сегодня прекрасен:';
 
             console.log('false');
         }

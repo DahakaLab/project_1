@@ -2,7 +2,7 @@ export function headerNode () {
     var headerText;
 
     headerText = document.createElement('header');
-    headerText.innerHTML = 'Header Text.';
+    headerText.innerHTML = 'Чайный сервис';
 
     document.body.appendChild(headerText);
 }

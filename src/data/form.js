@@ -8,12 +8,12 @@ export function formInputData () {
 
     formTag.name = 'form1';
 
-    lengendTag.innerHTML = 'Contact information';
-    paragraphLabel1.innerHTML = '<label for="firstNameText">Name </label>' +
+    lengendTag.innerHTML = 'Форма ввода:';
+    paragraphLabel1.innerHTML = '<label for="firstNameText">Имя </label>' +
         '<input type="text" id="firstNameText" name="firstNameText">';
-    paragraphLabel2.innerHTML = '<label for="secondTextName">Surname </label>' +
+    paragraphLabel2.innerHTML = '<label for="secondTextName">Фамилия </label>' +
         '<input type="text" id="secondTextName">';
-    paragraphInput.innerHTML = '<input type="button" value="Enter" id="button">';
+    paragraphInput.innerHTML = '<input type="button" value="Ввод" id="button">';
 
     fieldsetTag.appendChild(lengendTag);
     fieldsetTag.appendChild(paragraphLabel1);

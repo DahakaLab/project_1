@@ -4,9 +4,10 @@ import { formInputData } from './../data/form.js';
 export function showWhoBeautiful () {
     var massage = document.createElement('div');
     var nameOut = document.createElement('div');
-    var text = 'Please enter you name and surname...';
     var button = document.getElementById('button');
-    var name = '... my dear friend.';
+
+    var text = 'Пожалуйста введи имя и фамилию...';
+    var name = '... мой дорогуй друг.';
 
     massage.id = 'massage';
 

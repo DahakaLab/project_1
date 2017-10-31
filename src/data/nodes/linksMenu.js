@@ -9,9 +9,9 @@ export function linksMenu () {
 
     viewTextPage.href = 'view_text';
 
-    indexPage.appendChild(document.createTextNode('Main Page'));
+    indexPage.appendChild(document.createTextNode('Главная страница'));
     lolkekPage.appendChild(document.createTextNode('Lolkek'));
-    viewTextPage.appendChild(document.createTextNode('View Text'));
+    viewTextPage.appendChild(document.createTextNode('Хочешь узнать кто сегодня прекрасен?'));
 
     document.body.appendChild(indexPage);
     document.body.appendChild(lolkekPage);

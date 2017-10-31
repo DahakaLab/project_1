@@ -7,7 +7,7 @@ import { showWhoBeautiful } from './../data/massageOutput.js';
 
 (function() {
     var caption;
-    var captionText = 'View text!';
+    var captionText = 'Здесь вы узнаете кто сегодня прекрасен!';
 
     caption = document.createElement('h1');
     caption.innerHTML = captionText;
