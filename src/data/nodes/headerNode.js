@@ -1,5 +1,3 @@
-import './../../style/style.css';
-
 export function headerNode () {
     var header, logoPNG, headerCaption, headerParagraph;
 
