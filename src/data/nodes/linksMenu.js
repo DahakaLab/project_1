@@ -1,5 +1,5 @@
 export function linksMenu () {
-    var menuLink = document.createElement('menu');
+    var navLink = document.createElement('nav');
     var indexPageLink = document.createElement('li');
     var indexPage = document.createElement('a');
     var lolkekPageLink = document.createElement('li');
@@ -20,11 +20,13 @@ export function linksMenu () {
     lolkekPage.appendChild(document.createTextNode('Lolkek'));
     viewTextPage.appendChild(document.createTextNode('Хочешь узнать кто сегодня прекрасен?'));
 
-    menuLink.appendChild(indexPageLink);
-    menuLink.appendChild(lolkekPageLink);
-    menuLink.appendChild(viewTextPageLink);
+    navLink.classList = 'active';
 
-    document.body.appendChild(menuLink);
+    navLink.appendChild(indexPageLink);
+    navLink.appendChild(lolkekPageLink);
+    navLink.appendChild(viewTextPageLink);
+
+    document.body.appendChild(navLink);
 /*<menu>
     <li><a href="#">Смотреть фото</a></li>
     <li><a href="#">Смотреть видео</a></li>

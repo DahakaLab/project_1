@@ -3,7 +3,7 @@ import { headerNode } from './../data/nodes/headerNode.js';
 import { titleNode } from './../data/nodes/titleNode.js';
 import { linksMenu } from './../data/nodes/linksMenu.js';
 
-import { showWhoBeautiful } from './../data/massageOutput.js';
+import { showWhoBeautiful } from '../data/contentPage/whoBeatiful.js';
 
 (function() {
     var caption;

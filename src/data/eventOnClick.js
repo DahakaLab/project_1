@@ -1,4 +1,4 @@
-import { showWhoBeautiful } from './massageOutput.js';
+import { showWhoBeautiful } from './contentPage/whoBeatiful.js';
 
 export function eventOnClickEnter (text, nameOut) {
     button.onclick = function () {
