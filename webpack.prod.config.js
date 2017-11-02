@@ -44,15 +44,11 @@ module.exports = {
                 use: [
                     'file-loader'
                 ]
-            }
-        ],
-        loaders: [
+            },
             {
-                test: /\.js$/,
-                loader: "babel-loader",
-                options: {
-                    presets: "es2015"
-                }
+                test: /\.js?$/,
+                loader: 'babel-loader',
+                exclude: path.join(__dirname, 'node_modules')
             }
         ]
     }
