@@ -11,8 +11,8 @@ export function formInputData () {
     lengendTag.innerHTML = 'Форма ввода:';
     paragraphLabel1.innerHTML = '<label for="firstNameText">Имя </label>' +
         '<input type="text" id="firstNameText" name="firstNameText">';
-    paragraphLabel2.innerHTML = '<label for="secondTextName">Фамилия </label>' +
-        '<input type="text" id="secondTextName">';
+    paragraphLabel2.innerHTML = '<label for="secondNameText">Фамилия </label>' +
+        '<input type="text" id="secondNameText">';
     paragraphInput.innerHTML = '<input type="button" value="Ввод" id="button">';
 
     fieldsetTag.appendChild(lengendTag);

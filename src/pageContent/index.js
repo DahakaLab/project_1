@@ -1,13 +1,16 @@
 //import _ from 'lodash';
 import './../style/style.css';
-import React from 'react';
-import { render } from 'react-dom';
-import App from './app.js';
-import { linksMenu } from './../data/nodes/linksMenu.js';
-import { headerNode } from './../data/nodes/headerNode.js';
+import React, { component } from 'react';
+import ReactDOM, { render } from 'react-dom';
+import App from './../data/components/app.js';
 import { titleNode } from './../data/nodes/titleNode.js';
 
 (function() {
+    render(
+        <App/>,
+        document.getElementById('root')
+    );
+
     let caption;
     let captionText = 'Главная страница чайного сервиса!';
 
@@ -15,9 +18,5 @@ import { titleNode } from './../data/nodes/titleNode.js';
     caption.innerHTML = captionText;
 
     titleNode();
-    headerNode();
-    linksMenu();
     document.body.appendChild(caption);
-
-    render(<App/>, document.getElementById('main'));
 })();

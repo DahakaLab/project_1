@@ -1,5 +1,5 @@
-import { eventOnClickEnter } from '../eventOnClick.js';
-import { formInputData } from '../form.js';
+import { eventOnClickEnter } from './../eventOnClick.js';
+import { formInputData } from './../form.js';
 
 export function showWhoBeautiful () {
     let massage = document.createElement('div');

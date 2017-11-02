@@ -1,14 +1,11 @@
-import { showWhoBeautiful } from './contentPage/whoBeatiful.js';
-
 export function eventOnClickEnter (text, nameOut) {
     button.onclick = function () {
         let firstName = document.getElementById('firstNameText').value;
-        let surname = document.getElementById('secondTextName').value;
+        let surname = document.getElementById('secondNameText').value;
         let massageText = document.getElementById('massage');
 
         console.log(firstName);
         console.log(surname);
-
 
         if (firstName === '' && surname === '') {
             text = 'Пожалуйста введи имя и фамилию...';
