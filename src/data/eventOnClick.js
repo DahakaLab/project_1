@@ -2,9 +2,9 @@ import { showWhoBeautiful } from './contentPage/whoBeatiful.js';
 
 export function eventOnClickEnter (text, nameOut) {
     button.onclick = function () {
-        var firstName = document.getElementById('firstNameText').value;
-        var surname = document.getElementById('secondTextName').value;
-        var massageText = document.getElementById('massage');
+        let firstName = document.getElementById('firstNameText').value;
+        let surname = document.getElementById('secondTextName').value;
+        let massageText = document.getElementById('massage');
 
         console.log(firstName);
         console.log(surname);

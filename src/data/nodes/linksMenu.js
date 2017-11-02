@@ -1,11 +1,11 @@
 export function linksMenu () {
-    var navLink = document.createElement('nav');
-    var indexPageLink = document.createElement('li');
-    var indexPage = document.createElement('a');
-    var lolkekPageLink = document.createElement('li');
-    var lolkekPage = document.createElement('a');
-    var viewTextPageLink = document.createElement('li');
-    var viewTextPage = document.createElement('a');
+    let navLink = document.createElement('nav');
+    let indexPageLink = document.createElement('li');
+    let indexPage = document.createElement('a');
+    let lolkekPageLink = document.createElement('li');
+    let lolkekPage = document.createElement('a');
+    let viewTextPageLink = document.createElement('li');
+    let viewTextPage = document.createElement('a');
 
     indexPageLink.appendChild(indexPage);
     indexPage.href = '/';

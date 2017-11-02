@@ -1,5 +1,5 @@
 export function titleNode (){
-    var titleText, logoTitle;
+    let titleText, logoTitle;
 
     logoTitle = document.createElement('link');
     logoTitle.rel = 'shortcut icon';

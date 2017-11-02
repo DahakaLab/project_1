@@ -2,12 +2,12 @@ import { eventOnClickEnter } from '../eventOnClick.js';
 import { formInputData } from '../form.js';
 
 export function showWhoBeautiful () {
-    var massage = document.createElement('div');
-    var nameOut = document.createElement('div');
-    var button = document.getElementById('button');
+    let massage = document.createElement('div');
+    let nameOut = document.createElement('div');
+    let button = document.getElementById('button');
 
-    var text = 'Пожалуйста введи имя и фамилию...';
-    var name = '... мой дорогой друг.';
+    let text = 'Пожалуйста введи имя и фамилию...';
+    let name = '... мой дорогой друг.';
 
     massage.id = 'massage';
 

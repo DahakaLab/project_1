@@ -1,10 +1,10 @@
 export function formInputData () {
-    var formTag = document.createElement('form');
-    var fieldsetTag = document.createElement('fieldset');
-    var lengendTag = document.createElement('legend');
-    var paragraphLabel1 = document.createElement('p');
-    var paragraphLabel2 = document.createElement('p');
-    var paragraphInput = document.createElement('p');
+    let formTag = document.createElement('form');
+    let fieldsetTag = document.createElement('fieldset');
+    let lengendTag = document.createElement('legend');
+    let paragraphLabel1 = document.createElement('p');
+    let paragraphLabel2 = document.createElement('p');
+    let paragraphInput = document.createElement('p');
 
     formTag.name = 'form1';
 

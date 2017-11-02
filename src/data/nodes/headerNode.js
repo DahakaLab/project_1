@@ -1,5 +1,5 @@
 export function headerNode () {
-    var header, logoPNG, headerCaption, headerParagraph;
+    let header, logoPNG, headerCaption, headerParagraph;
 
     /*logoPNG = document.createElement('img');
     logoPNG.src = 'http://chaisotsvetie.ru/filemanager/listok.png';
