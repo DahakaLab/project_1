@@ -9,20 +9,17 @@ export function eventOnClickEnter (text, nameOut) {
 
         if (firstName === '' && surname === '') {
             text = 'Пожалуйста введи имя и фамилию...';
-            firstName = '... ты по прежнему ничего не ввел,';
-            surname = 'мой дорогой друг.';
+            nameOut.textContent = '... ты по прежнему ничего не ввел, мой дорогой друг.';
 
             console.log('true');
         } else {
             text = 'Сегодня прекрасен:';
+            nameOut.textContent = firstName + ' ' + surname;
 
             console.log('false');
         }
 
         massageText.innerHTML = text;
-
-        nameOut.textContent = firstName + ' ' + surname;
-
         console.log('click');
     };
 }
