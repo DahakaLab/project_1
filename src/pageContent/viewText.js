@@ -11,9 +11,6 @@ import eventOnClickEnter from './../data/contentPage/eventOnClick.js';
         document.getElementById('root')
     );
 
-    var text = 'Пожалуйста введи имя и фамилию...';
-    var nameOut = '... мой дорогой друг.';
-
     titleNode();
-    eventOnClickEnter(text, nameOut);
+    eventOnClickEnter();
 })();

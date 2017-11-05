@@ -1,9 +1,12 @@
-export default function eventOnClickEnter (text, name) {
+export function eventOnClickEnter () {
     button.onclick = function () {
         let firstName = document.getElementById('firstNameText').value;
         let surname = document.getElementById('secondNameText').value;
         let massageText = document.getElementById('massage');
         let nameOut =document.getElementById('nameout');
+
+        let text = 'Пожалуйста введи имя и фамилию...';
+        let name = '... мой дорогой друг.';
 
         console.log(firstName);
         console.log(surname);

@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
     devtool: 'source-map',
     entry: {
-        index: './src/pageContent/root.js',
+        root: './src/pageContent/root.js',
         lolkek: './src/pageContent/lolkek.js',
         viewText: './src/pageContent/viewText.js'
     },
