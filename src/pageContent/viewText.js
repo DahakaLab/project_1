@@ -1,9 +1,9 @@
-import '../style/style.css';
+import './../style/style.css';
 import React, { component } from 'react';
 import ReactDOM, { render } from 'react-dom';
-import App from './../data/components/app.js';
+import App from './../data/components/app/viewText.js';
 import { titleNode } from './../data/nodes/titleNode.js';
-import { showWhoBeautiful } from '../data/contentPage/whoBeatiful.js';
+import eventOnClickEnter from './../data/contentPage/eventOnClick.js';
 
 (function() {
     render(
@@ -11,14 +11,9 @@ import { showWhoBeautiful } from '../data/contentPage/whoBeatiful.js';
         document.getElementById('root')
     );
 
-    let caption;
-    let captionText = 'Здесь вы узнаете кто сегодня прекрасен!';
-
-    caption = document.createElement('h1');
-    caption.innerHTML = captionText;
+    var text = 'Пожалуйста введи имя и фамилию...';
+    var nameOut = '... мой дорогой друг.';
 
     titleNode();
-    document.body.appendChild(caption);
-
-    showWhoBeautiful();
+    eventOnClickEnter(text, nameOut);
 })();

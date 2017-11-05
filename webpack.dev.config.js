@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
     devtool: 'eval',
     entry: {
-        index: './src/pageContent/index.js',
+        index: './src/pageContent/root.js',
         lolkek: './src/pageContent/lolkek.js',
         viewText: './src/pageContent/viewText.js'
     },

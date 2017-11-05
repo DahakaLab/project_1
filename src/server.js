@@ -4,7 +4,7 @@ const express = require('express');
 module.exports = {
     app: function () {
         const app = express();
-        const indexPath = path.join(__dirname, '/../public/views/index.html');
+        const indexPath = path.join(__dirname, '/../public/views/root.html');
         const lolkekPath = path.join(__dirname, '/../public/views/lolkek.html');
         const viewText = path.join(__dirname, '/../public/views/viewText.html');
         const publicPath = express.static(path.join(__dirname, '../public'));
