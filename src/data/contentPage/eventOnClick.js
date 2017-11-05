@@ -1,4 +1,4 @@
-export function eventOnClickEnter () {
+export default function eventOnClickEnter () {
     button.onclick = function () {
         let firstName = document.getElementById('firstNameText').value;
         let surname = document.getElementById('secondNameText').value;
