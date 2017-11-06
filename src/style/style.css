@@ -42,20 +42,21 @@ menu {
 article {
     float: left;
     margin-bottom: 30px;
-    padding: 0 15px;
+    padding: 15px 15px;
     width: 74%;
     overflow: hidden;
 }
 
 main {
-    margin: 0 auto;
+    margin: 0 200px;
     width: 1170px;
     display: block;
 }
 
 aside {
-    float: right;
-    padding-left: 15px;
+    margin: 0 20px 0 0;
+    float: left;
+    padding-right: 40px;
     width: 25%;
     display: block;
     overflow: hidden;
