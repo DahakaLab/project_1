@@ -4,6 +4,7 @@ import NavLink from '../navLink';
 import Content from '../viewText/content';
 import Form from "../viewText/form";
 import ViewText from "../viewText/viewTextContent";
+import Footer from "../footer";
 
 export default class App extends Component {
     render() {
@@ -11,9 +12,14 @@ export default class App extends Component {
             <div>
                 <Header/>
                 <NavLink/>
-                <Content/>
-                <Form/>
-                <ViewText/>
+                <main>
+                    <article>
+                        <Content/>
+                        <Form/>
+                        <ViewText/>
+                    </article>
+                </main>
+                <Footer/>
             </div>
         )
     }

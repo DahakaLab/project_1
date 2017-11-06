@@ -15,6 +15,7 @@
     font-weight:bold;
 }
 
+
 header {
     background-color: #a8ff80;
     color: #094d00;
@@ -36,4 +37,34 @@ body {
 menu {
     padding: 0;
 
+}
+
+article {
+    float: left;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    width: 74%;
+    overflow: hidden;
+}
+
+main {
+    margin: 0 auto;
+    width: 1170px;
+    display: block;
+}
+
+aside {
+    float: right;
+    padding-left: 15px;
+    width: 25%;
+    display: block;
+    overflow: hidden;
+    position:relative;
+}
+
+footer {
+    background-color: #a8ff80;
+    clear: both;
+    color: #094d00;
+    padding: 50px 20px;
 }
