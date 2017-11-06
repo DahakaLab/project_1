@@ -48,7 +48,7 @@ article {
 }
 
 main {
-    margin: 0 200px;
+    margin: 0 auto;
     width: 1170px;
     display: block;
 }
