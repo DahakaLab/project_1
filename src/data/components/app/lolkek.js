@@ -3,6 +3,8 @@ import Header from '../header.js';
 import NavLink from '../navLink';
 import Content from '../lolkek/content';
 import Footer from "../footer";
+import Notebook from "../lolkek/device";
+import { notebookProps } from '../props/notebookProps.js';
 
 export default class App extends Component {
     render() {
@@ -13,6 +15,7 @@ export default class App extends Component {
                 <main>
                     <article>
                         <Content/>
+                        <Notebook data={notebookProps}/>
                     </article>
                 </main>
                 <Footer/>
