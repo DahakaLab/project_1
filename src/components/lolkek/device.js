@@ -5,7 +5,7 @@ export default class Notebook extends Component {
         var data = this.props.data;
         var notebookTamplate = this.props.data.map(function (item, index) {
             return(
-                <div key={index}>
+                <div key={index} className="deviceLolkek">
                     <p className="notebookData">{item.mark}: {item.model}</p>
                 </div>
             );

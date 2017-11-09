@@ -1,8 +1,8 @@
 import './../style/style.css';
 import React, { component } from 'react';
 import ReactDOM, { render } from 'react-dom';
-import App from './../data/components/app/lolkek.js';
-import { titleNode } from './../data/nodes/titleNode.js';
+import App from '../components/app/lolkek.js';
+import { titleNode } from '../nodes/titleNode.js';
 
 (function() {
     render(
