@@ -15,6 +15,35 @@
     font-weight:bold;
 }
 
+.none {
+    display: none !important;
+}
+
+.nav_link{
+    margin: 10px;
+}
+
+.notebook_model {
+    color: #094d00;
+}
+.notebook_mark {
+    margin: 10px 0 0 0;
+    display: block;
+}
+
+.notebook_count {
+    margin: 10px 0 0 0;
+    display: block;
+}
+
+.article {
+    background: #A8FF80;
+    border: 1px solid rgba(9, 77, 0, 0.82);
+    width: 600px;
+    margin: 0 0 5px;
+    box-shadow: 2px 2px 5px -1px rgb(9, 77, 0);
+    padding: 3px 5px;
+}
 
 header {
     background-color: #a8ff80;
@@ -27,7 +56,7 @@ header {
 nav {
     background-color: #e4ffff;
     margin-bottom: 20px;
-    height: 56px;
+    height: 73px;
 }
 
 body {
@@ -68,4 +97,8 @@ footer {
     clear: both;
     color: #094d00;
     padding: 50px 20px;
+}
+
+p {
+    margin: 0 0 5px;
 }

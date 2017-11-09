@@ -10,6 +10,10 @@ var notebookProps = [
     {
         mark: 'MSI',
         model: 'GT60'
+    },
+    {
+        mark: 'Samsung',
+        model: 'NP300'
     }
 ];
 

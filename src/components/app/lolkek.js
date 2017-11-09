@@ -9,7 +9,7 @@ import { notebookProps } from '../props/notebookProps.js';
 export default class App extends Component {
     render() {
         return(
-            <div className="lolkekApp">
+            <div className="lolkek_app">
                 <Header/>
                 <NavLink/>
                 <main>
