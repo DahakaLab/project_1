@@ -26,6 +26,11 @@
 .notebook_model {
     color: #094d00;
 }
+
+.notebook_comment {
+    color: #094d00;
+}
+
 .notebook_mark {
     margin: 10px 0 0 0;
     display: block;

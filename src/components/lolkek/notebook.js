@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Article from "./article";
 
 export default class Notebook extends Component {
     render (){
@@ -8,9 +10,8 @@ export default class Notebook extends Component {
         if (data.length > 0) {
             notebookTamplate = this.props.data.map(function (item, index) {
                 return (
-                    <div key={index} className={"device_lolkek " + "article "}>
-                        <p className="notebook_mark"><b>{item.mark}:</b></p>
-                        <p className="notebook_model">{item.model}</p>
+                    <div key={index}>
+                        <Article data={item}/>
                     </div>
                 );
             });
@@ -18,12 +19,16 @@ export default class Notebook extends Component {
             notebookTamplate = <p>Записей по ноутбукам нет.</p>;
         }
 
-
         return (
             <div>
+                <h3 className={data.length > 0 ? "": "none"}>Список ноутов:</h3>
                 {notebookTamplate}
                 <strong className={"notebook_count " + (data.length > 0 ? "":"none")}>Всего ноутбуков: {data.length}</strong>
             </div>
-        )
+        );
     }
 }
+
+Notebook.propTypes = {
+    data: PropTypes.array.isRequired
+};

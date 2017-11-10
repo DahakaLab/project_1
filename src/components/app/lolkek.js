@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from '../header.js';
 import NavLink from '../navLink';
-import Content from '../lolkek/content';
 import Footer from "../footer";
-import Notebook from "../lolkek/device";
+import Content from '../lolkek/content';
+import Notebook from "../lolkek/notebook";
 import { notebookProps } from '../props/notebookProps.js';
 
 export default class App extends Component {
@@ -13,7 +13,7 @@ export default class App extends Component {
                 <Header/>
                 <NavLink/>
                 <main>
-                    <article>
+                    <article className="main_article">
                         <Content/>
                         <Notebook data={notebookProps}/>
                     </article>

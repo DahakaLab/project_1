@@ -5,7 +5,6 @@ export default class Content extends Component {
         return(
             <div className="content_lolkek">
                 <h1>Lolkek Cheburek!</h1>
-                <h3>Список ноутов:</h3>
             </div>
         );
     }
