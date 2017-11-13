@@ -1,30 +1,28 @@
-export default function eventOnClickEnter () {
+export default function eventOnClickButton () {
     button.onclick = function () {
-        let firstName = document.getElementById('firstNameText').value;
-        let surname = document.getElementById('secondNameText').value;
         let massageText = document.getElementById('massage');
         let nameOut =document.getElementById('nameout');
 
-        let text = 'Пожалуйста введи имя и фамилию...';
-        let name = '... мой дорогой друг.';
+        var massage = {
+            text: 'Пожалуйста введи имя и фамилию...',
+            name: '... мой дорогой друг.'
+        };
 
-        console.log(firstName);
-        console.log(surname);
+        var user = {
+            firstName: document.getElementById('firstNameText').value,
+            surname: document.getElementById('secondNameText').value
+        };
 
-        if (firstName === '' && surname === '') {
-            text = 'Пожалуйста введи имя и фамилию...';
-            name = '... ты по прежнему ничего не ввел, мой дорогой друг.';
-
-            console.log('true');
+        if (user.firstName === '' && user.surname === '') {
+            massage.text = 'Пожалуйста введи имя и фамилию...';
+            massage.name = '... ты по прежнему ничего не ввел, мой дорогой друг.';
         } else {
-            text = 'Сегодня прекрасен:';
-            name = firstName + ' ' + surname;
-
-            console.log('false');
+            massage.text = 'Сегодня прекрасен:';
+            massage.name = user.firstName + ' ' + user.surname;
         }
 
-        massageText.innerHTML = text;
-        nameOut.textContent = name;
-        console.log('click');
+        massageText.innerHTML = massage.text;
+        nameOut.textContent = massage.name;
+        console.log(JSON.stringify(user));
     };
 }
