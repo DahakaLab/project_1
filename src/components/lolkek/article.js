@@ -21,8 +21,13 @@ export default class Article extends Component {
                 <p className="notebook_model">{model}</p>
                 <button
                     className={'comment_readmore ' + (visible ? 'none': '')}
-                    onClick={() => this.setState({visible: 'true'})}>
+                    onClick={() => this.setState({visible: true})}>
                     Комментарий
+                </button>
+                <button
+                    className={'comment_hide ' + (visible ? '': 'none')}
+                    onClick={() => this.setState({visible: false})}>
+                    Скрыть комментарий
                 </button>
                 <p className={"notebook_comment " + (visible ? "": "none")}>{comment}</p>
             </div>
