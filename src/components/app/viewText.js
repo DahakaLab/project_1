@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import Header from '../header.js';
 import NavLink from '../navLink';
 import Content from '../viewText/content';
-import Form from "../viewText/form";
-import ViewText from "../viewText/viewTextContent";
 import Footer from "../footer";
+import WhoBeatifull from "../viewText/whoBeatifull";
 
 export default class App extends Component {
     render() {
@@ -15,8 +14,7 @@ export default class App extends Component {
                 <main>
                     <article>
                         <Content/>
-                        <Form/>
-                        <ViewText/>
+                        <WhoBeatifull/>
                     </article>
                 </main>
                 <Footer/>
