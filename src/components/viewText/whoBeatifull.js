@@ -50,3 +50,4 @@ export default class WhoBeatifull extends Component {
         )
     }
 }
+
