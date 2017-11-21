@@ -20,7 +20,7 @@ export default class Notebook extends Component {
         }
 
         return (
-            <div>
+            <div className="notebook_notebooks">
                 <h3 className={data.length > 0 ? "": "none"}>Список ноутов:</h3>
                 {notebookTamplate}
                 <strong className={"notebook_count " + (data.length > 0 ? "":"none")}>Всего ноутбуков: {data.length}</strong>

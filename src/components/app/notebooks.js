@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import Header from '../header.js';
 import NavLink from '../navLink';
 import Footer from "../footer";
-import Content from '../lolkek/content';
-import Notebook from "../lolkek/notebook";
+import Content from '../notebooks/content';
+import Notebook from "../notebooks/notebook";
 import { notebookProps } from '../props/notebookProps.js';
 
 export default class App extends Component {
     render() {
         return(
-            <div className="lolkek_app">
+            <div className="notebooks_app">
                 <Header/>
                 <NavLink/>
                 <main>

@@ -12,12 +12,12 @@ export default class WhoBeatifull extends Component {
             name: '... мой дорогой друг.'
         };
 
-        this.eventLogic = this.eventLogic.bind(this);
+        this.eventOnClickChangeState = this.eventOnClickChangeState.bind(this);
         this.firstNameChange = this.firstNameChange.bind(this);
         this.secondNameChange = this.secondNameChange.bind(this);
     }
 
-    eventLogic (firstName, secondName) {
+    eventOnClickChangeState (firstName, secondName) {
         console.log(firstName + ' ' + secondName);
 
         if (firstName === '' && secondName === '') {
@@ -41,7 +41,7 @@ export default class WhoBeatifull extends Component {
         return (
             <div className="whoBeatiful">
                 <Form
-                    eventClick={ this.eventLogic }
+                    eventClick={ this.eventOnClickChangeState }
                     textMassage={ this.state }
                     firstNameChange={this.firstNameChange}
                     secondNameChange={this.secondNameChange}/>

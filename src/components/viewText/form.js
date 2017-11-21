@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 
 export default class Form extends Component {
-    render (){
+    handleMethodEventOnClickChangeState (){
         var firstName = this.props.textMassage.firstName,
             secondName = this.props.textMassage.secondName;
+
+        this.props.eventClick(firstName, secondName)
+
+    }
+    render (){
         return(
             <aside>
                 <form name="form1">
@@ -11,12 +16,12 @@ export default class Form extends Component {
                         <legend>Форма ввода:</legend>
                         <p><label htmlFor="firstNameText">Имя </label><input
                             type="text"
-                            value={firstName}
+                            value={this.props.textMassage.firstName}
                             onChange={this.props.firstNameChange}
                         /></p>
                         <p><label htmlFor="secondNameText">Фамилия </label><input
                             type="text"
-                            value={secondName}
+                            value={this.props.textMassage.secondName}
                             onChange={this.props.secondNameChange}
                         /></p>
                     </fieldset>
@@ -24,7 +29,7 @@ export default class Form extends Component {
                         type="button"
                         value="Ввод"
                         id="button"
-                        onClick={() => {this.props.eventClick(firstName, secondName)}}
+                        onClick={this.handleMethodEventOnClickChangeState.bind(this)}
                     /></p>
                 </form>
             </aside>

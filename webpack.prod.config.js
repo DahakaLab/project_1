@@ -5,7 +5,7 @@ module.exports = {
     devtool: 'source-map',
     entry: {
         root: './src/pageContent/root.js',
-        lolkek: './src/pageContent/lolkek.js',
+        notebooks: './src/pageContent/notebooks.js',
         viewText: './src/pageContent/viewText.js'
     },
     devServer: {

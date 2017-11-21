@@ -16,7 +16,7 @@ export default class Article extends Component {
             visible = this.state.visible;
 
         return (
-            <div className={"device_lolkek " + "article "}>
+            <div className={"device_notebooks " + "article "}>
                 <p className="notebook_mark"><b>{mark}:</b></p>
                 <p className="notebook_model">{model}</p>
                 <button

@@ -5,7 +5,7 @@ export default class NavLink extends Component {
         return (
             <nav className="active">
                 <li className="nav_link"><a className="article" href="/">Главная страница</a></li>
-                <li className="nav_link"><a className="article" href="lolkek">Lolkek</a></li>
+                <li className="nav_link"><a className="article" href="notebooks">Ноутбуки</a></li>
                 <li className="nav_link"><a className="article" href="view_text">Хочешь узнать кто сегодня прекрасен?</a></li>
             </nav>
         )
