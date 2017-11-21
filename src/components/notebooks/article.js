@@ -9,7 +9,7 @@ export default class Article extends Component {
         };
     }
 
-    render (){
+    render() {
         var mark = this.props.data.mark,
             model = this.props.data.model,
             comment = this.props.data.comment,

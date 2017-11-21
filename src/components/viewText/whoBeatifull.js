@@ -17,7 +17,7 @@ export default class WhoBeatifull extends Component {
         this.secondNameChange = this.secondNameChange.bind(this);
     }
 
-    eventOnClickChangeState (firstName, secondName) {
+    eventOnClickChangeState(firstName, secondName) {
         console.log(firstName + ' ' + secondName);
 
         if (firstName === '' && secondName === '') {
@@ -50,4 +50,3 @@ export default class WhoBeatifull extends Component {
         )
     }
 }
-

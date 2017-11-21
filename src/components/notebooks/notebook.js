@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Article from "./article";
 
 export default class Notebook extends Component {
-    render (){
+    render() {
         var data = this.props.data;
         var notebookTamplate;
 

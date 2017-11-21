@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 
 export default class Form extends Component {
-    handleMethodEventOnClickChangeState (){
+    constructor(props) {
+        super(props);
+
+        this.handleMethodEventOnClickChangeState = this.handleMethodEventOnClickChangeState.bind(this);
+    }
+
+    handleMethodEventOnClickChangeState() {
         var firstName = this.props.textMassage.firstName,
             secondName = this.props.textMassage.secondName;
 
         this.props.eventClick(firstName, secondName)
-
     }
-    render (){
+
+    render() {
         return(
             <aside>
                 <form name="form1">
@@ -29,7 +35,7 @@ export default class Form extends Component {
                         type="button"
                         value="Ввод"
                         id="button"
-                        onClick={this.handleMethodEventOnClickChangeState.bind(this)}
+                        onClick={this.handleMethodEventOnClickChangeState}
                     /></p>
                 </form>
             </aside>

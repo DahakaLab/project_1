@@ -1,4 +1,4 @@
-export function titleNode (){
+export function titleNode() {
     let titleText, logoTitle;
 
     logoTitle = document.createElement('link');

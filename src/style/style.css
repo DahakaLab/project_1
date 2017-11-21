@@ -50,6 +50,10 @@
     padding: 3px 5px;
 }
 
+.test_input {
+    margin: 10px 5px 5px 10px;
+}
+
 header {
     background-color: #a8ff80;
     color: #094d00;

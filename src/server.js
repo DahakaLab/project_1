@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 
 module.exports = {
-    app: function () {
+    app: function() {
         const app = express();
         const indexPath = path.join(__dirname, '/../public/views/root.html');
         const notebooks = path.join(__dirname, '/../public/views/notebooks.html');
