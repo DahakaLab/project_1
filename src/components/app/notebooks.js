@@ -5,7 +5,7 @@ import Footer from "../footer";
 import Content from '../notebooks/content';
 import Notebook from "../notebooks/notebook";
 import { notebookProps } from '../props/notebookProps.js';
-import TestInput from "../notebooks/testInput";
+import AddNotebook from "../notebooks/addNotebook";
 
 export default class App extends Component {
     render() {
@@ -16,8 +16,8 @@ export default class App extends Component {
                 <main>
                     <article className="main_article">
                         <Content/>
+                        <AddNotebook/>
                         <Notebook data={notebookProps}/>
-                        <TestInput/>
                     </article>
                 </main>
                 <Footer/>

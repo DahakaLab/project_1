@@ -1,0 +1,92 @@
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+
+export default class AddNotebook extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            markIsEmpty: true,
+            modelIsEmpty: true,
+            textIsEmpty: true,
+            notChecked: true
+        };
+
+        this.onBtnClickHandler = this.onBtnClickHandler.bind(this);
+        this.onCheckRuleClick = this.onCheckRuleClick.bind(this);
+    }
+
+    componentDidMount() {
+        ReactDOM.findDOMNode(this.refs.mark).focus();
+    }
+
+    onBtnClickHandler(e) {
+        e.preventDefault();
+
+        var mark = ReactDOM.findDOMNode(this.refs.mark).value,
+            model = ReactDOM.findDOMNode(this.refs.model).value,
+            text = ReactDOM.findDOMNode(this.refs.text_comment).value;
+
+        console.log(mark + ' ' + model + ' ' + text);
+        alert(mark + ' ' + model + ' ' + text);
+    }
+    onCheckRuleClick(){
+        this.setState({notChecked: !this.state.notChecked})
+    }
+
+    onFieldChange(fieldName, e){
+        let next = {};
+
+        if (e.target.value.trim().length > 0) {
+            next[fieldName] = false;
+            this.setState(next);
+        } else {
+            next[fieldName] = true;
+            this.setState(next);
+        }
+    }
+
+    render() {
+        return(
+            <aside className="asside_add_notebook">
+                <h3>Создание модели:</h3>
+                <form className="add_notebook cf">
+                    <input
+                        type="text"
+                        className="add_mark"
+                        onChange={this.onFieldChange.bind(this, 'markIsEmpty')}
+                        placeholder="Введите марку"
+                        ref="mark"
+                    />
+                    <input
+                        type="text"
+                        className="add_model"
+                        onChange={this.onFieldChange.bind(this, 'modelIsEmpty')}
+                        placeholder="Введите модель"
+                        ref="model"
+                    />
+                    <textarea
+                        className="add_comment"
+                        onChange={this.onFieldChange.bind(this, 'textIsEmpty')}
+                        placeholder="Текс комментария"
+                        ref="text_comment"
+                    />
+                    <label className="add_chekrule">
+                        <input
+                            onClick={this.onCheckRuleClick}
+                            type="checkbox"
+                            defaultChecked={false}
+                            ref="chekrule"
+                        />
+                        Я уверен в этом!</label>
+                    <button
+                        className="add_comment_btn"
+                        onClick={this.onBtnClickHandler}
+                        ref='alert_button'
+                        disabled={this.state.modelIsEmpty || this.state.markIsEmpty || this.state.textIsEmpty || this.state.notChecked}>
+                        <b>Вывести в консоль</b>
+                    </button>
+                </form>
+            </aside>
+        )
+    }
+}

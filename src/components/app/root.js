@@ -11,7 +11,7 @@ export default class App extends Component {
                 <Header/>
                 <NavLink/>
                 <main>
-                    <article>
+                    <article className="root_article">
                         <Content/>
                     </article>
                 </main>

@@ -1,3 +1,52 @@
+.add_notebook {
+    margin: 0 5px 5px 0;
+    width: 210px;
+    border: 1px dashed rgba(9, 77, 0, 0.82);
+    padding: 5px;
+}
+
+.add_checkrule {
+    border: none;
+    font-size: 12px;
+}
+
+.add_comment_btn {
+    box-sizing: content-box;
+    background: #A8FF80;
+    color: #094d00;
+    text-transform: uppercase;
+}
+
+.add_comment_btn:disabled {
+    background: #ffffff;
+    color: #b2b2b2;
+}
+
+.active {
+    font-weight:bold;
+}
+
+.add_mark, .add_model, .add_comment, .add_comment_btn, .add_chekrule {
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    width: 94%;
+    border: 1px solid rgba(9, 77, 0, 0.82);
+}
+
+.article {
+    background: #A8FF80;
+    border: 1px solid rgba(9, 77, 0, 0.82);
+    width: 600px;
+    margin: 0 0 5px;
+    box-shadow: 2px 2px 5px -1px rgb(9, 77, 0);
+    padding: 3px 5px;
+}
+
+/*.asside_add_notebook{
+    position: fixed;
+}*/
+
 .color_font_green{
     color: #094d00;
 }
@@ -6,13 +55,22 @@
     color: red;
 }
 
+.content_view_text{
+    margin: 0 20px 0 0;
+    float: right;
+    width: 65%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.form1_btn{
+    margin: 5px 0;
+}
+
 .logo_header{
     height: 30px;
     width: 30px;
-}
-
-.active {
-    font-weight:bold;
 }
 
 .none {
@@ -39,19 +97,6 @@
 .notebook_count {
     margin: 10px 0 0 0;
     display: block;
-}
-
-.article {
-    background: #A8FF80;
-    border: 1px solid rgba(9, 77, 0, 0.82);
-    width: 600px;
-    margin: 0 0 5px;
-    box-shadow: 2px 2px 5px -1px rgb(9, 77, 0);
-    padding: 3px 5px;
-}
-
-.test_input {
-    margin: 10px 5px 5px 10px;
 }
 
 header {
@@ -87,7 +132,7 @@ article {
 
 main {
     margin: 0 auto;
-    width: 1170px;
+    width: 1300px;
     display: block;
 }
 

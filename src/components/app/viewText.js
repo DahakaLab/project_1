@@ -12,7 +12,7 @@ export default class App extends Component {
                 <Header/>
                 <NavLink/>
                 <main>
-                    <article>
+                    <article className="viewText_article">
                         <Content/>
                         <WhoBeatifull/>
                     </article>
