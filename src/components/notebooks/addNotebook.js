@@ -60,7 +60,7 @@ export default class AddNotebook extends Component {
     render() {
         return(
             <aside className="asside_add_notebook">
-                <h3>Создание модели:</h3>
+                <h3>Создание нового ноутбука:</h3>
                 <form className="add_notebook cf">
                     <input
                         type="text"
@@ -95,7 +95,7 @@ export default class AddNotebook extends Component {
                         onClick={this.onBtnClickHandler}
                         ref='alert_button'
                         disabled={this.state.modelIsEmpty || this.state.markIsEmpty || this.state.textIsEmpty || this.state.notChecked}>
-                        <b>Создать новый ноутбук</b>
+                        <b>Добавить ноутбук в список</b>
                     </button>
                 </form>
             </aside>
