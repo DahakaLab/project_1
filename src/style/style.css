@@ -1,7 +1,7 @@
 .add_notebook {
     margin: 0 5px 5px 0;
     width: 210px;
-    border: 1px dashed rgba(9, 77, 0, 0.82);
+    border: 1px solid rgba(9, 77, 0, 0.82);
     padding: 5px;
 }
 
@@ -43,9 +43,9 @@
     padding: 3px 5px;
 }
 
-.asside_add_notebook{
+/*.asside_add_notebook{
     position: fixed;
-}
+}*/
 
 .color_font_green{
     color: #094d00;

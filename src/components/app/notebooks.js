@@ -3,9 +3,7 @@ import Header from '../header.js';
 import NavLink from '../navLink';
 import Footer from "../footer";
 import Content from '../notebooks/content';
-import Notebook from "../notebooks/notebook";
-import { notebookProps } from '../props/notebookProps.js';
-import AddNotebook from "../notebooks/addNotebook";
+import NotebookList from "../notebooks/notebookList";
 
 export default class App extends Component {
     render() {
@@ -16,8 +14,7 @@ export default class App extends Component {
                 <main>
                     <article className="main_article">
                         <Content/>
-                        <AddNotebook/>
-                        <Notebook data={notebookProps}/>
+                        <NotebookList/>
                     </article>
                 </main>
                 <Footer/>

@@ -22,12 +22,24 @@ export default class AddNotebook extends Component {
     onBtnClickHandler(e) {
         e.preventDefault();
 
+        var markEl = ReactDOM.findDOMNode(this.refs.mark),
+            modelEl = ReactDOM.findDOMNode(this.refs.model),
+            textEl = ReactDOM.findDOMNode(this.refs.text_comment);
+
         var mark = ReactDOM.findDOMNode(this.refs.mark).value,
             model = ReactDOM.findDOMNode(this.refs.model).value,
             text = ReactDOM.findDOMNode(this.refs.text_comment).value;
 
-        console.log(mark + ' ' + model + ' ' + text);
-        alert(mark + ' ' + model + ' ' + text);
+        var item = [{
+            mark: mark,
+            model: model,
+            comment: text
+        }];
+
+        window.ee.emit('Notebook.add', item);
+
+        textEl.value = modelEl.value = markEl.value = '';
+        this.setState({markIsEmpty: true, modelIsEmpty: true, textIsEmpty: true,});
     }
     onCheckRuleClick(){
         this.setState({notChecked: !this.state.notChecked})
@@ -83,7 +95,7 @@ export default class AddNotebook extends Component {
                         onClick={this.onBtnClickHandler}
                         ref='alert_button'
                         disabled={this.state.modelIsEmpty || this.state.markIsEmpty || this.state.textIsEmpty || this.state.notChecked}>
-                        <b>Вывести в консоль</b>
+                        <b>Создать новый ноутбук</b>
                     </button>
                 </form>
             </aside>
