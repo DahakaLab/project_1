@@ -11,26 +11,26 @@ export default class AddNotebook extends Component {
             notChecked: true
         };
 
-        this.onBtnClickHandler = this.onBtnClickHandler.bind(this);
-        this.onCheckRuleClick = this.onCheckRuleClick.bind(this);
+        this.notebookFormClick = this.notebookFormClick.bind(this);
+        this.notebookFormCheck = this.notebookFormCheck.bind(this);
     }
 
     componentDidMount() {
         ReactDOM.findDOMNode(this.refs.mark).focus();
     }
 
-    onBtnClickHandler(e) {
+    notebookFormClick(e) {
         e.preventDefault();
 
-        var markEl = ReactDOM.findDOMNode(this.refs.mark),
+        let markEl = ReactDOM.findDOMNode(this.refs.mark),
             modelEl = ReactDOM.findDOMNode(this.refs.model),
             textEl = ReactDOM.findDOMNode(this.refs.text_comment);
 
-        var mark = ReactDOM.findDOMNode(this.refs.mark).value,
+        let mark = ReactDOM.findDOMNode(this.refs.mark).value,
             model = ReactDOM.findDOMNode(this.refs.model).value,
             text = ReactDOM.findDOMNode(this.refs.text_comment).value;
 
-        var item = [{
+        let item = [{
             mark: mark,
             model: model,
             comment: text
@@ -41,11 +41,12 @@ export default class AddNotebook extends Component {
         textEl.value = modelEl.value = markEl.value = '';
         this.setState({markIsEmpty: true, modelIsEmpty: true, textIsEmpty: true,});
     }
-    onCheckRuleClick(){
+
+    notebookFormCheck(){
         this.setState({notChecked: !this.state.notChecked})
     }
 
-    onFieldChange(fieldName, e){
+    notebookFormFieldChange(fieldName, e){
         let next = {};
 
         if (e.target.value.trim().length > 0) {
@@ -65,26 +66,26 @@ export default class AddNotebook extends Component {
                     <input
                         type="text"
                         className="add_mark"
-                        onChange={this.onFieldChange.bind(this, 'markIsEmpty')}
+                        onChange={this.notebookFormFieldChange.bind(this, 'markIsEmpty')}
                         placeholder="Введите марку"
                         ref="mark"
                     />
                     <input
                         type="text"
                         className="add_model"
-                        onChange={this.onFieldChange.bind(this, 'modelIsEmpty')}
+                        onChange={this.notebookFormFieldChange.bind(this, 'modelIsEmpty')}
                         placeholder="Введите модель"
                         ref="model"
                     />
                     <textarea
                         className="add_comment"
-                        onChange={this.onFieldChange.bind(this, 'textIsEmpty')}
+                        onChange={this.notebookFormFieldChange.bind(this, 'textIsEmpty')}
                         placeholder="Текс комментария"
                         ref="text_comment"
                     />
                     <label className="add_chekrule">
                         <input
-                            onClick={this.onCheckRuleClick}
+                            onClick={this.notebookFormCheck}
                             type="checkbox"
                             defaultChecked={false}
                             ref="chekrule"
@@ -92,7 +93,7 @@ export default class AddNotebook extends Component {
                         Я уверен в этом!</label>
                     <button
                         className="add_comment_btn"
-                        onClick={this.onBtnClickHandler}
+                        onClick={this.notebookFormClick}
                         ref='alert_button'
                         disabled={this.state.modelIsEmpty || this.state.markIsEmpty || this.state.textIsEmpty || this.state.notChecked}>
                         <b>Добавить ноутбук в список</b>

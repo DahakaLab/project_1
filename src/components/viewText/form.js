@@ -14,7 +14,7 @@ export default class Form extends Component {
     }
 
     handleMethodEventOnClickChangeState() {
-        var firstName = this.props.textMassage.firstName,
+        const firstName = this.props.textMassage.firstName,
             secondName = this.props.textMassage.secondName;
 
         this.props.eventClick(firstName, secondName)

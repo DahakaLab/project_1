@@ -12,12 +12,12 @@ export default class NotebookList extends Component{
     }
 
     componentDidMount() {
-        var self = this;
-        var EventEmitter = require('events').EventEmitter;
+        const self = this;
+        const EventEmitter = require('events').EventEmitter;
         window.ee = new EventEmitter();
 
         window.ee.addListener('Notebook.add', function(item) {
-            var nextNotebook = item.concat(self.state.notebooks);
+            const nextNotebook = item.concat(self.state.notebooks);
             self.setState({notebooks: nextNotebook});
         });
     }

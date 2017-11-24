@@ -4,8 +4,8 @@ import Article from "./article";
 
 export default class Notebook extends Component {
     render() {
-        var data = this.props.data;
-        var notebookTamplate;
+        const data = this.props.data;
+        let notebookTamplate;
 
         if (data.length > 0) {
             notebookTamplate = this.props.data.map(function (item, index) {
