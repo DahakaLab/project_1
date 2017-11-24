@@ -18,6 +18,11 @@ var notebookProps = [
         mark: 'Samsung',
         model: 'NP300',
         comment: 'Не заряжается.'
+    },
+    {
+        mark: 'Lenovo',
+        model: 'B590',
+        comment: 'Сломаны петли.'
     }
 ];
 
