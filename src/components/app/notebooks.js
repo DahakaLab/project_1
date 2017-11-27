@@ -5,7 +5,7 @@ import Footer from "../footer";
 import Content from '../notebooks/content';
 import NotebookList from "../notebooks/notebookList";
 
-export default class App extends Component {
+export default class AppNotebook extends Component {
     render() {
         return(
             <div className="notebooks_app">

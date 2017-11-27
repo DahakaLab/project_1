@@ -11,43 +11,43 @@ export default class AddNotebook extends Component {
             notChecked: true
         };
 
-        this.notebookFormClick = this.notebookFormClick.bind(this);
-        this.notebookFormCheck = this.notebookFormCheck.bind(this);
+        this.notebookFormClickBtn = this.notebookFormClickBtn.bind(this);
+        this.notebookFormCheckbox = this.notebookFormCheckbox.bind(this);
     }
 
     componentDidMount() {
         ReactDOM.findDOMNode(this.refs.mark).focus();
     }
 
-    notebookFormClick(e) {
+    notebookFormClickBtn(e) {
         e.preventDefault();
 
-        let markEl = ReactDOM.findDOMNode(this.refs.mark),
-            modelEl = ReactDOM.findDOMNode(this.refs.model),
-            textEl = ReactDOM.findDOMNode(this.refs.text_comment);
+        let mark = ReactDOM.findDOMNode(this.refs.mark),
+            model = ReactDOM.findDOMNode(this.refs.model),
+            textComment = ReactDOM.findDOMNode(this.refs.text_comment);
 
-        let mark = ReactDOM.findDOMNode(this.refs.mark).value,
-            model = ReactDOM.findDOMNode(this.refs.model).value,
-            text = ReactDOM.findDOMNode(this.refs.text_comment).value;
-
-        let item = [{
-            mark: mark,
-            model: model,
-            comment: text
+        const item = [{
+            mark: mark.value,
+            model: model.value,
+            comment: textComment.value
         }];
 
-        window.ee.emit('Notebook.add', item);
+        window.ee.emit('NotebookAddEvent', item);
 
-        textEl.value = modelEl.value = markEl.value = '';
-        this.setState({markIsEmpty: true, modelIsEmpty: true, textIsEmpty: true,});
+        textComment.value = model.value = mark.value = '';
+        this.setState({
+            markIsEmpty: true,
+            modelIsEmpty: true,
+            textIsEmpty: true
+        });
     }
 
-    notebookFormCheck(){
+    notebookFormCheckbox(){
         this.setState({notChecked: !this.state.notChecked})
     }
 
     notebookFormFieldChange(fieldName, e){
-        let next = {};
+        const next = {};
 
         if (e.target.value.trim().length > 0) {
             next[fieldName] = false;
@@ -85,16 +85,17 @@ export default class AddNotebook extends Component {
                     />
                     <label className="add_chekrule">
                         <input
-                            onClick={this.notebookFormCheck}
+                            onClick={this.notebookFormCheckbox}
                             type="checkbox"
                             defaultChecked={false}
                             ref="chekrule"
                         />
-                        Я уверен в этом!</label>
+                        Я уверен в этом!
+                    </label>
                     <button
                         className="add_comment_btn"
-                        onClick={this.notebookFormClick}
-                        ref='alert_button'
+                        onClick={this.notebookFormClickBtn}
+                        ref="alert_button"
                         disabled={this.state.modelIsEmpty || this.state.markIsEmpty || this.state.textIsEmpty || this.state.notChecked}>
                         <b>Добавить ноутбук в список</b>
                     </button>

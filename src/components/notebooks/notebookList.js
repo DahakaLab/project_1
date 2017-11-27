@@ -13,17 +13,17 @@ export default class NotebookList extends Component{
 
     componentDidMount() {
         const self = this;
-        const EventEmitter = require('events').EventEmitter;
-        window.ee = new EventEmitter();
+        const eventEmitter = require('events').EventEmitter;
+        window.ee = new eventEmitter();
 
-        window.ee.addListener('Notebook.add', function(item) {
-            const nextNotebook = item.concat(self.state.notebooks);
+        window.ee.addListener('NotebookAddEvent', function(item) {
+            const nextNotebook = self.state.notebooks.concat(item);
             self.setState({notebooks: nextNotebook});
         });
     }
 
     componentWillUnmount() {
-        window.ee.removeEventListener('Notebook.add');
+        window.ee.removeEventListener('NotebookAddEvent');
     }
 
     render() {
