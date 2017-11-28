@@ -9,13 +9,14 @@
     "start": "node ./src/app.js --config webpack.dev.config.js"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "event-emitter": "^0.3.5",
     "express": "^4.15.4",
     "file-loader": "^0.11.2",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.1.1",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

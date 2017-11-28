@@ -23,7 +23,8 @@ export default class NotebookList extends Component{
     }
 
     componentWillUnmount() {
-        window.ee.removeEventListener('NotebookAddEvent');
+        let listener = function() {};
+        window.ee.removeListener('NotebookAddEvent', listener, false);
     }
 
     render() {

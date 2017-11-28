@@ -4,9 +4,7 @@ const webpack = require('webpack');
 module.exports = {
     devtool: 'eval',
     entry: {
-        root: './src/pageContent/root.js',
-        notebooks: './src/pageContent/notebooks.js',
-        viewText: './src/pageContent/viewText.js'
+        root: './src/pageContent/root.js'
     },
     devServer: {
         contentBase: './public',

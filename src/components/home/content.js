@@ -3,8 +3,7 @@ import React, { Component } from 'react';
 export default class Content extends Component {
     render() {
         return(
-            <div className="content_root">
-                <div className='col-md-12'>Раздел /</div>
+            <div className="content_home">
                 <h1>Главная страница чайного сервиса!</h1>
                 Чай (кит. 茶 — «ча́» на пекинском и гуандунском диалекте, «те̂» на амойском и «тцай-е» на тайваньском, «чай» — на хинди) — напиток, получаемый варкой, завариванием и/или настаиванием листа чайного куста, который предварительно подготавливается специальным образом.
 
