@@ -7,7 +7,7 @@ export default class Footer extends Component {
                 <p>
 
                     <small className="color_font_green">
-                        <time>2017</time> © <a href="https://vk.com/id195424283">DahakaLab VK</a>
+                        <time>2017</time> © <a href="https://vk.com/id439849777">DahakaLab VK</a>
                     </small>
 
                 </p>
