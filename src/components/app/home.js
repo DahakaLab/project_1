@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Content from '../home/content';
+import HomeContent from '../home/content';
 
 export default class Home extends Component {
     render() {
@@ -7,7 +7,7 @@ export default class Home extends Component {
             <div className="home_app">
                 <main>
                     <article className="home_article">
-                        <Content/>
+                        <HomeContent/>
                     </article>
                 </main>
             </div>

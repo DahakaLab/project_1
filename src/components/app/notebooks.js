@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Content from '../notebooks/content';
+import NotebookContent from '../notebooks/content';
 import NotebookList from "../notebooks/notebookList";
 
 export default class Notebooks extends Component {
@@ -8,7 +8,7 @@ export default class Notebooks extends Component {
             <div className="notebooks_app">
                 <main>
                     <article className="main_article">
-                        <Content/>
+                        <NotebookContent/>
                         <NotebookList/>
                     </article>
                 </main>
